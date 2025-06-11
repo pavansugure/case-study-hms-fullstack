@@ -1,0 +1,97 @@
+/* ReservationByCodeModal.css */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal-box {
+  background-color: white;
+  padding: 24px 32px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heading {
+  margin: 0 0 12px 0;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.input-field {
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+.btn-primary {
+  padding: 10px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af;
+}
+
+.btn {
+  padding: 10px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #e5e7eb;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d1d5db;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.reservation-details {
+  margin-top: 20px;
+  text-align: left;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.reservation-details p {
+  margin: 6px 0;
+}
+
+.reservation-details strong {
+  font-weight: 600;
+}

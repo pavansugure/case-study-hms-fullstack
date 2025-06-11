@@ -1,0 +1,80 @@
+2025-05-18T11:31:47.930+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.payment.PaymentServiceApplication    : Starting PaymentServiceApplication using Java 21.0.6 with PID 7948 (C:\Users\91826\OneDrive\Desktop\Case study - HMS\PaymentService\target\classes started by 91826 in C:\Users\91826\OneDrive\Desktop\Case study - HMS\PaymentService)
+2025-05-18T11:31:47.940+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.payment.PaymentServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-18T11:31:50.539+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-18T11:31:50.885+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 327 ms. Found 1 JPA repository interface.
+2025-05-18T11:31:51.423+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5d1735bc-b9c6-3ba1-a76a-71ee985a17f0
+2025-05-18T11:31:52.592+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-05-18T11:31:52.623+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-18T11:31:52.630+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-18T11:31:52.768+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-18T11:31:52.769+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4736 ms
+2025-05-18T11:31:53.726+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-18T11:31:53.852+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-18T11:31:53.931+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-18T11:31:54.490+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-18T11:31:54.570+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-18T11:31:55.304+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f3dafd4
+2025-05-18T11:31:55.308+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-18T11:31:55.394+05:30  WARN 7948 --- [PAYMENT-SERVICE] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-18T11:31:55.428+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.30
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-18T11:31:56.904+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-18T11:31:57.001+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-18T11:31:58.097+05:30  WARN 7948 --- [PAYMENT-SERVICE] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-18T11:31:58.353+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'RESERVATION-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-05-18T11:31:59.940+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-18T11:32:01.734+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-18T11:32:01.813+05:30  WARN 7948 --- [PAYMENT-SERVICE] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-18T11:32:02.039+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-18T11:32:02.085+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-18T11:32:02.096+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-18T11:32:02.117+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-18T11:32:02.118+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-18T11:32:02.118+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-18T11:32:02.119+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-18T11:32:02.119+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-18T11:32:02.119+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-18T11:32:02.120+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-18T11:32:02.879+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-18T11:32:02.882+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-18T11:32:02.887+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-18T11:32:02.892+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747548122890 with initial instances count: 3
+2025-05-18T11:32:02.913+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2025-05-18T11:32:02.914+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747548122914, current=UP, previous=STARTING]
+2025-05-18T11:32:02.931+05:30  INFO 7948 --- [PAYMENT-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:8085: registering service...
+2025-05-18T11:32:02.947+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2025-05-18T11:32:02.948+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747548122948, current=DOWN, previous=UP]
+2025-05-18T11:32:02.949+05:30  WARN 7948 --- [PAYMENT-SERVICE] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-05-18T11:32:02.975+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-18T11:32:02.980+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-18T11:32:03.000+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-18T11:32:03.002+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-05-18T11:32:03.034+05:30  INFO 7948 --- [PAYMENT-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:8085 - registration status: 204
+2025-05-18T11:32:03.035+05:30  INFO 7948 --- [PAYMENT-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:8085: registering service...
+2025-05-18T11:32:03.046+05:30  INFO 7948 --- [PAYMENT-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:8085 - registration status: 204
+2025-05-18T11:32:03.047+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-05-18T11:32:03.077+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:8085 - deregister  status: 200
+2025-05-18T11:32:03.077+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-05-18T11:32:03.113+05:30  INFO 7948 --- [PAYMENT-SERVICE] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-18T11:32:03.162+05:30 ERROR 7948 --- [PAYMENT-SERVICE] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8085 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8085 or configure this application to listen on another port.
+

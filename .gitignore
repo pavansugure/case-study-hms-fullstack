@@ -1,0 +1,18 @@
+# Node + React (Frontend)
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# Java + Eclipse (Backend)
+backend/**/target/
+backend/**/.classpath
+backend/**/.project
+backend/**/.settings/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

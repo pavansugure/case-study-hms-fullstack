@@ -1,0 +1,15 @@
+1747644783450	Encapsulate field 'invoiceFilePath, ...'
+1747651133270	Move compilation unit
+1747652610478	Delete element
+1747653436143	Delete element
+1747654206362	Delete element
+1747654214627	Delete element
+1747654362867	Delete element
+1747675054358	Encapsulate field 'code, ...'
+1747675332000	Encapsulate field 'guestId, ...'
+1747675336252	Encapsulate field 'roomId, ...'
+1747675340455	Encapsulate field 'checkInDate, ...'
+1747675344941	Encapsulate field 'checkOutDate, ...'
+1747675681311	Encapsulate field 'price, ...'
+1747680723467	Rename type 'InvoiceDetails'
+1747681042923	Delete element

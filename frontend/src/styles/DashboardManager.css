@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, rgba(0, 128, 128, 0.8), rgba(0, 128, 128, 0.5)),
+              url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+}
+
+.dashboard-container {
+  padding: 20px;
+}
+
+.navbar {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  max-width:93%;
+  margin: 5px auto 20px;
+  height: 10px;
+}
+
+.navbar-actions{
+    display: flex;
+    gap: 10px;
+    width: 130px;
+    margin-right: 40px;
+}
+
+.nav-button {
+    display: flex;
+    background: none;
+    border: none; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    color: #06616b;
+    margin-left: 5px;
+}
+
+.services-navbarr {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background: white;
+  padding: 10px;
+  margin: 70px auto;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 50%;
+}
+
+.service-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: 0.3s ease-in-out;
+  color: #333;
+}
+
+.service-button:hover, .service-button.active {
+  color: teal;
+}
+
+.dropdown-container {
+  background: rgba(83, 195, 195, 0.85);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  color: white;
+  margin: 20px auto;
+  max-width: 900px;
+}

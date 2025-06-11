@@ -1,0 +1,182 @@
+/* Overlay covers entire screen with slight dark transparent background */
+.listmodal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Main modal container with max width and nice shadows */
+.listmodal-container {
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+  padding: 30px 35px;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}   
+
+/* Close button top-right with subtle hover */
+.listmodal-close-btn {
+  align-self: flex-end;
+  background-color: #e53e3e;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  margin-bottom: 15px;
+  user-select: none;
+}
+.listmodal-close-btn:hover {
+  background-color: #c53030;
+}
+
+/* Table styling */
+.listmodal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  color: #444;
+  
+}
+
+/* Table head */
+.listmodal-table thead tr {
+  background-color: #f0f4f8;
+  border-bottom: 2px solid #d1d5db;
+
+}
+
+.listmodal-table th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #2d3748;
+  border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Table body rows */
+.listmodal-table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+  transition: background-color 0.2s ease;
+}
+.listmodal-table tbody tr:hover {
+  background-color: #f7fafc;
+}
+
+/* Table cells */
+.listmodal-table td {
+  padding: 10px 15px;
+  vertical-align: middle;
+    text-align: center;
+}
+
+/* Input and select styling */
+.listmodal-input {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1.5px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: border-color 0.3s ease;
+}
+.listmodal-input:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 3px #3182ce;
+}
+
+/* Action buttons base style */
+.listmodal-btn {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 0.25s ease;
+  user-select: none;
+}
+
+/* Specific action button colors */
+.listmodal-btn-save {
+  background-color: #38a169;
+  color: white;
+}
+.listmodal-btn-save:hover {
+  background-color: #2f855a;
+}
+
+.listmodal-btn-cancel {
+  background-color: #718096;
+  color: white;
+}
+.listmodal-btn-cancel:hover {
+  background-color: #4a5568;
+}
+
+.listmodal-btn-edit {
+  background-color: #ecc94b;
+  color: #5a4d0e;
+}
+.listmodal-btn-edit:hover {
+  background-color: #d69e2e;
+  color: white;
+}
+
+.listmodal-btn-delete {
+  background-color: #e53e3e;
+  color: white;
+}
+.listmodal-btn-delete:hover {
+  background-color: #9b2c2c;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .listmodal-container {
+    padding: 20px 20px;
+  }
+  .listmodal-table th,
+  .listmodal-table td {
+    padding: 8px 10px;
+  }
+  .listmodal-title {
+    font-size: 1.5rem;
+  }
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* or use margin-right on checkbox */
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}

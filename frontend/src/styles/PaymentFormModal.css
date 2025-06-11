@@ -1,0 +1,99 @@
+/* Modal backdrop */
+.payment-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+/* Modal container */
+.payment-modal-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 26rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Title */
+.payment-modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937; /* text-gray-800 */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Input field */
+.payment-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  outline: none;
+}
+
+.payment-input:focus {
+  border-color: #3b82f6; /* ring-blue-500 */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+/* Button container */
+.payment-btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Primary button */
+.payment-btn-primary {
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.payment-btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+/* Secondary/cancel button */
+.payment-btn-secondary {
+  padding: 0.5rem 1rem;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.payment-btn-secondary:hover {
+  background-color: #d1d5db;
+}
+
+/* Success state section */
+.payment-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.payment-success-message {
+  color: #16a34a; /* green-600 */
+  font-weight: 600;
+  font-size: 1.125rem;
+}
